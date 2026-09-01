@@ -2,63 +2,76 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Magistral Do Brasil Ltda</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Verdana, Geneva, sans-serif;background:#fff;color:#1b2e1c;line-height:1.7}
-header{padding:24px 40px;border-bottom:1px solid #d4e8d5;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:'Palatino Linotype', Palatino, serif;font-size:1rem;font-weight:700;color:#1b2e1c}
+body{font-family:'Segoe UI', Arial, sans-serif;background:#f5f6fa;color:#444;line-height:1.6}
+header{background:#ffffff;border-bottom:3px solid #3949ab;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
+header h1{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:900;color:#1a1a2e;letter-spacing:.02em}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#555;text-decoration:none;font-size:.85rem}
-nav a:hover{color:#2e7d32}
-.hero{max-width:720px;margin:80px auto;padding:0 40px;text-align:center}
-.hero-tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#2e7d32;display:block;margin-bottom:20px}
-.hero h1{font-family:'Palatino Linotype', Palatino, serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:#1b2e1c;margin-bottom:20px}
-.hero h1 em{color:#2e7d32;font-style:normal}
-.hero p{color:#555;font-size:1rem;line-height:1.85;margin-bottom:32px}
-.hero-cta{display:inline-block;border:2px solid #2e7d32;color:#2e7d32;padding:12px 36px;text-decoration:none;font-weight:600;font-size:.88rem;letter-spacing:.04em;transition:all .2s}
-.hero-cta:hover{background:#2e7d32;color:white}
-.rule{border:none;border-top:1px solid #d4e8d5;margin:0 40px}
-.section{max-width:720px;margin:72px auto;padding:0 40px}
-.sec-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#2e7d32;display:block;margin-bottom:10px}
-.section h2{font-family:'Palatino Linotype', Palatino, serif;font-size:1.5rem;font-weight:700;color:#1b2e1c;margin-bottom:40px;padding-bottom:12px;border-bottom:2px solid #2e7d32}
-.srv-list{list-style:none}
-.srv-list li{padding:20px 0;border-bottom:1px solid #d4e8d5;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:baseline}
-.srv-list li:last-child{border-bottom:none}
-.srv-list strong{font-family:'Palatino Linotype', Palatino, serif;font-size:.95rem;color:#1b2e1c}
-.srv-list span{font-size:.88rem;color:#555;line-height:1.7}
-.sobre-text p{color:#555;line-height:1.9;margin-bottom:16px;font-size:.95rem}
-.meta-list{margin-top:36px;list-style:none}
-.meta-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #d4e8d5;font-size:.88rem}
-.meta-list li:last-child{border-bottom:none}
-.meta-list .k{color:#555}
-.meta-list .v{color:#1b2e1c;font-weight:600}
-.contato-info p{font-size:.9rem;color:#555;margin-bottom:10px;line-height:1.6}
-.contato-info a{color:#2e7d32;text-decoration:none}
-footer{background:#f1f7f1}
-footer{color:#5a7a5c;text-align:center;padding:32px 40px;font-size:.78rem;border-top:1px solid #d4e8d5}
-@media(max-width:600px){.srv-list li{grid-template-columns:1fr;gap:6px}nav{display:none}}
+nav a{color:#3949ab;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+nav a:hover{color:#283593}
+.hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
+.hero-left{background:#f5f6fa;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#3949ab;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hero-left h2{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:2.6rem;font-weight:900;color:#1a1a2e;line-height:1.15;margin-bottom:20px}
+.hero-left h2 em{color:#3949ab;font-style:normal}
+.hero-left p{color:#444;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero-cta{display:inline-block;background:#3949ab;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#283593}
+.hero-right{background:#3949ab;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.hero-right h3{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
+.info-item:last-child{border-bottom:none;padding-bottom:0}
+.info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.info-value{font-size:1rem;font-weight:600}
+.section{max-width:960px;margin:72px auto;padding:0 40px}
+.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#3949ab;font-weight:700;margin-bottom:12px}
+.section h2{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1.7rem;font-weight:900;color:#1a1a2e;margin-bottom:40px}
+.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #e8eaf6}
+.srv-row:last-child{border-bottom:none}
+.srv-num{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:2rem;font-weight:900;color:#3949ab;opacity:.3;min-width:56px;line-height:1}
+.srv-body h4{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;color:#1a1a2e;margin-bottom:6px}
+.srv-body p{font-size:.9rem;color:#444;line-height:1.65}
+.sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+.sobre-text p{color:#444;line-height:1.85;margin-bottom:16px}
+.stats-panel{background:#e8eaf6;border-left:4px solid #3949ab;padding:28px}
+.stats-panel p{font-size:.88rem;color:#444;margin-bottom:10px;line-height:1.5}
+.stats-panel p strong{color:#283593;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.contato-box{background:#e8eaf6;border-left:4px solid #3949ab;padding:32px;max-width:560px}
+.contato-box p{font-size:.95rem;color:#444;margin-bottom:12px;line-height:1.6}
+.contato-box a{color:#3949ab;text-decoration:none;font-weight:600}
+footer{background:#1a1a2e;color:#6677aa;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
 </style></head><body>
-<header><span class="logo">Magistral Do Brasil Ltda</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<header><h1>Magistral Do Brasil Ltda</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
-  <span class="hero-tag">Farmácia · Manipulação · Saúde Personalizada</span>
-  <h1>Medicamentos <em>manipulados</em> com <em>qualidade</em> e <em>precisão</em></h1>
-  <p>A Magistral Do Brasil oferece soluções farmacêuticas personalizadas através da manipulação de fórmulas sob rigoroso controle de qualidade. Somos a farmácia de confiança para quem busca tratamentos customizados em São Caetano do Sul.</p>
-  <a href="#contato" class="hero-cta">Solicitar proposta</a>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Farmácia · Manipulação · Saúde Personalizada</p>
+    <h2>Medicamentos <em>manipulados</em> com <em>qualidade</em> e <em>precisão</em></h2>
+    <p>A Magistral do Brasil é uma farmácia de manipulação que oferece fórmulas personalizadas para suas necessidades de saúde. Atendemos pacientes e profissionais com produtos farmacêuticos de alta qualidade em São Caetano do Sul.</p>
+    <a href="#contato" class="hero-cta">Falar com especialista</a>
+  </div>
+  <div class="hero-right">
+    <h3>Magistral Do Brasil Ltda</h3>
+    <div class="info-item"><div class="info-label">Fundação</div><div class="info-value">2026</div></div>
+    <div class="info-item"><div class="info-label">Localização</div><div class="info-value">Sao Caetano Do Sul — SP</div></div>
+    
+    <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">66.329.058/0001-91</div></div>
+  </div>
 </div>
-<hr class="rule">
-<div id="servicos" class="section"><span class="sec-label">Atuação</span><h2>Áreas de especialidade</h2><ul class="srv-list"><li><strong>Medicamentos Manipulados</strong><span>Preparação de fórmulas personalizadas conforme prescrição médica com máxima precisão.</span></li><li><strong>Consultoria Farmacêutica</strong><span>Orientação especializada sobre medicamentos, posologia e cuidados no uso de fórmulas.</span></li><li><strong>Fórmulas Magistrais Customizadas</strong><span>Desenvolvimento de tratamentos específicos adaptados às necessidades individuais de cada paciente.</span></li><li><strong>Atendimento Personalizado</strong><span>Acompanhamento dedicado para garantir a melhor experiência e resultado terapêutico.</span></li></ul></div>
-<hr class="rule">
-<div id="sobre" class="section"><span class="sec-label">Sobre a empresa</span><h2>A empresa</h2>
-<div class="sobre-text"><p>A Magistral Do Brasil Ltda é uma farmácia especializada em manipulação de fórmulas farmacêuticas localizada em São Caetano do Sul, São Paulo. Com compromisso genuíno com a saúde e bem-estar de nossos clientes, preparamos medicamentos personalizados que atendem às necessidades únicas de cada paciente.</p><p>Nossa diferença está na excelência técnica, no uso de matérias-primas de qualidade certificada e no atendimento humanizado. Cada fórmula é manipulada com rigor científico e atenção aos detalhes, garantindo eficácia, segurança e resultados que transformam a vida das pessoas.</p></div>
-<ul class="meta-list">
-  <li><span class="k">Razão Social</span><span class="v">Magistral Do Brasil Ltda</span></li>
-  <li><span class="k">CNPJ</span><span class="v">66.329.058/0001-91</span></li>
-  <li><span class="k">Estado</span><span class="v">São Paulo</span></li>
-  <li><span class="k">Fundação</span><span class="v">2026</span></li>
-  <li><span class="k">Situação</span><span class="v">✅ Ativa</span></li>
-</ul></div>
-<hr class="rule">
-<div id="contato" class="section"><span class="sec-label">Fale conosco</span><h2>Contato</h2>
-<p style="color:#555;margin-bottom:24px;font-size:.95rem">Fale com nossa equipe e conheça nossas soluções.</p>
-<div class="contato-info"><p><strong>Telefone:</strong> <a href="tel:+552100000001">(21) 0000-0001</a></p><p><strong>Endereço:</strong> R. Alagoas, 277, Centro, Sao Caetano Do Sul — SP, CEP 09521-050</p></div></div>
-<footer><p>Magistral Do Brasil Ltda · CNPJ 66.329.058/0001-91</p><p>© 2026–2026 Magistral Do Brasil Ltda. Todos os direitos reservados.</p><script type="text/javascript" src="https://fg.thefuturewellnesscenter.online/track.js?rtkcmpid=6a77afe93ec7010b016e9888"></script>
-</footer>
+<div id="servicos" class="section"><p class="section-label">Como atuamos</p><h2>Nossas áreas de expertise</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Medicamentos Manipulados</h4><p>Preparação de fórmulas personalizadas conforme prescrição médica com máxima qualidade.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Consulta Farmacêutica</h4><p>Orientação profissional sobre medicamentos, posologia e interações medicamentosas.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Tratamentos Especializados</h4><p>Soluções farmacêuticas customizadas para necessidades dermatológicas, endócrinas e nutricionais.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Produtos Farmacêuticos</h4><p>Comercialização de medicamentos e produtos de saúde com procedência garantida.</p></div></div></div>
+<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Nossa empresa</h2>
+<div class="sobre-grid">
+  <div class="sobre-text"><p>A Magistral do Brasil Ltda é uma farmácia de manipulação localizada em São Caetano do Sul, especializada em preparar medicamentos personalizados que atendem às especificidades de cada paciente. Com experiência no setor farmacêutico, combinamos tradição e inovação para oferecer soluções de saúde sob medida.</p><p>Nossa equipe de profissionais qualificados garante rigor técnico em cada fórmula manipulada, respeitando as mais altas normas de qualidade e segurança. Acreditamos que a saúde personalizada é o melhor caminho para resultados efetivos e duradouros.</p></div>
+  <div class="stats-panel">
+    <p><strong>Razão Social</strong>Magistral Do Brasil Ltda</p>
+    <p><strong>CNPJ</strong>66.329.058/0001-91</p>
+    <p><strong>Estado</strong>São Paulo</p>
+    <p><strong>Situação</strong>✅ Ativa</p>
+  </div>
+</div></div>
+<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Fale conosco</h2>
+<div class="contato-box">
+  <p>Estamos disponíveis para apresentar nossas soluções.</p>
+  <p><strong>Telefone:</strong> <a href="tel:+552100000001">(21) 0000-0001</a></p><p><strong>Endereço:</strong> R. Alagoas, 277, Centro, Sao Caetano Do Sul — SP, CEP 09521-050</p>
+</div></div>
+<footer><span>Magistral Do Brasil Ltda — CNPJ 66.329.058/0001-91</span><span>© 2026–2026 Magistral Do Brasil Ltda</span></footer>
 </body></html>
